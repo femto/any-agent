@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: "v5.0.0"
+    rev: "v6.0.0"
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
@@ -18,7 +18,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: "v0.11.6"
+    rev: "v0.16.7"
     hooks:
       - id: ruff
         args:
@@ -27,7 +27,7 @@ repos:
       - id: ruff-format
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.15.0"
+    rev: "v2.3.1"
     hooks:
       - id: mypy
         additional_dependencies:
@@ -36,7 +36,7 @@ repos:
           - any-agent[dev, all]
 
   - repo: https://github.com/codespell-project/codespell
-    rev: "v2.4.1"
+    rev: "v2.4.3"
     hooks:
       - id: codespell
         exclude: CODE_OF_CONDUCT.md
